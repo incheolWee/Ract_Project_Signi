@@ -1,0 +1,117 @@
+.workpage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+.workpage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.workpage-header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.workpage-header .icons img {
+    height: 24px;
+    margin-left: 15px;
+}
+
+.workpage-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    /* Added to position the sidebar */
+}
+
+.document {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: auto;
+    background-color: #f5f5f5;
+}
+
+.document img {
+    max-width: 50%;
+    height: auto;
+}
+
+.sidebar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.save-button,
+.confirm-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4285f4;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.save-button:hover,
+.confirm-button:hover {
+    background-color: #357ae8;
+}
+
+.signatures {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.signatures img {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.expand-button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expand-button img {
+    width: 24px;
+    height: 24px;
+}

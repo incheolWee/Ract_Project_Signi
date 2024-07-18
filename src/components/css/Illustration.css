@@ -1,0 +1,13 @@
+.illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+    /* Adjusted for desired size */
+}
